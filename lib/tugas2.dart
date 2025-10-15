@@ -10,7 +10,7 @@ class Tugas2 extends StatelessWidget {
         leading: IconButton(
           icon: Icon(Icons.menu),
           onPressed: () {
-            // Aksi saat ikon diklik, biasanya buka drawer
+            // Aksi saat ikon
             Scaffold.of(context).openDrawer();
           },
         ),
@@ -72,7 +72,11 @@ class Tugas2 extends StatelessWidget {
                       SizedBox(width: 15),
                       Text(
                         "Dewa Zeus@gmail.com",
-                        style: TextStyle(fontSize: 16, color: Colors.black),
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ],
                   ),
