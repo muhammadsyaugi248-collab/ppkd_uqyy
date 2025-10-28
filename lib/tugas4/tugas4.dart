@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 
 class Tugas4 extends StatelessWidget {
@@ -10,13 +8,6 @@ class Tugas4 extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xffFBF9D1),
       appBar: AppBar(
-        leading: IconButton(
-          icon: Icon(Icons.menu),
-          onPressed: () {
-            // Aksi saat ikon
-            Scaffold.of(context).openDrawer();
-          },
-        ),
         title: Row(
           children: [
             Text(
@@ -40,7 +31,6 @@ class Tugas4 extends StatelessWidget {
             Icon(Icons.local_hospital, color: Colors.redAccent),
           ],
         ),
-        backgroundColor: const Color.fromARGB(255, 34, 122, 37),
       ),
       body: ListView(
         physics: BouncingScrollPhysics(),
