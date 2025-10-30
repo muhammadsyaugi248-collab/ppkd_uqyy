@@ -28,23 +28,28 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  animated_notch_bottom_bar: ^1.0.0
   collection_providers: ^0.2.2
   cupertino_icons: ^1.0.8
   delightful_toast: ^1.1.0
   flutter:
     sdk: flutter
   flutter_fit_utils_provider: ^2.4.1
+  flutter_native_splash: ^2.4.7
   flutter_toast_bar: ^0.0.2
   fluttertoast: ^9.0.0
   intl: ^0.20.2
   photo_manager_image_provider: ^2.2.0
   provider: ^6.1.5+1
+  route: ^0.4.6
+  shared_preference_app_group: ^1.1.1
   shared_preferences: ^2.5.3
+  shared_preferences_android: ^2.4.15
   sqflite: ^2.4.2
-  animated_notch_bottom_bar: ^1.0.0
+  typed_preferences: ^0.2.0
 
 dev_dependencies:
-  flutter_lints: ^5.0.0
+  flutter_lints: ^6.0.0
   flutter_test:
     sdk: flutter
 
