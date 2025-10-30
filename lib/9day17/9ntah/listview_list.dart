@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class tugas9 extends StatefulWidget {
-  const tugas9({super.key});
+class tugas912 extends StatefulWidget {
+  const tugas912({super.key});
 
   @override
-  State<tugas9> createState() => _tugas9State();
+  State<tugas912> createState() => _tugas912State();
 }
 
-class _tugas9State extends State<tugas9> {
+class _tugas912State extends State<tugas912> {
   final List<String> namaobat = [
     "Paracetaamol",
     "Fresh care",

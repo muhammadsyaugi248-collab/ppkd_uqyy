@@ -9,7 +9,7 @@ class Tugas6 extends StatefulWidget {
   State<Tugas6> createState() => _Tugas6State();
 }
 
-class _Tugas6State extends State<Tugas10> {
+class _Tugas6State extends State<Tugas6> {
   bool showtext = true;
   @override
   Widget build(BuildContext context) {

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ppkd_uqyy/10day18/loginscreen.dart';
+import 'package:ppkd_uqyy/9day17/9ntah/lis_view_model.dart';
+import 'package:ppkd_uqyy/9day17/9ntah/listview_list.dart';
+import 'package:ppkd_uqyy/9day17/tugas9.dart';
+import 'package:ppkd_uqyy/9day17/tugas9_3.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,7 +36,7 @@ class MyApp extends StatelessWidget {
           seedColor: const Color.fromARGB(255, 255, 0, 0),
         ),
       ),
-      home: LoginScreenDay18(),
+      home: Tugas9List(),
     );
   }
 }

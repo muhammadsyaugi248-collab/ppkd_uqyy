@@ -2,16 +2,16 @@ import 'package:delightful_toast/delight_toast.dart';
 import 'package:delightful_toast/toast/components/toast_card.dart';
 import 'package:flutter/material.dart';
 import 'package:ppkd_uqyy/9day17/appimage.dart';
-import 'package:ppkd_uqyy/extension/rupiah.dart';
+import 'package:ppkd_uqyy/9day17/extension/rupiah.dart';
 
-class tugas9 extends StatefulWidget {
-  const tugas9({super.key});
+class tugas931w21 extends StatefulWidget {
+  const tugas931w21({super.key});
 
   @override
-  State<tugas9> createState() => _tugas9State();
+  State<tugas931w21> createState() => _tugas931w21State();
 }
 
-class _tugas9State extends State<tugas9> {
+class _tugas931w21State extends State<tugas931w21> {
   final List<Map<String, dynamic>> namaobat = [
     {
       "name": "Paracetamol",

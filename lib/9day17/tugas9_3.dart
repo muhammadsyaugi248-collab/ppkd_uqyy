@@ -1,89 +1,50 @@
 import 'package:flutter/material.dart';
-import 'package:ppkd_uqyy/9day17/tugas9_2.dart';
-// Hapus import yang tidak diperlukan atau yang berasal dari path spesifik:
-// import 'package:ppkd_uqyy/9day17/tugas9_2.dart';
-// Asumsi Class Product di category_model.dart memiliki properti:
-// final String name;
-// final String description;
-// final double price;
-// final String? imageUrl; // Opsional jika digunakan untuk placeholder
+import 'package:ppkd_uqyy/9day17/appimage.dart';
+import 'package:ppkd_uqyy/9day17/extension/rupiah.dart';
+import 'package:ppkd_uqyy/9day17/models/obat_models.dart';
 
-class ListProduct extends StatelessWidget {
-  // KESALAHAN 1: Tipe argumen 'product' harusnya adalah Product, BUKAN ListProduct.
-  final Product product;
+// NOMOR 3
+class Tugas9 extends StatefulWidget {
+  const Tugas9({super.key});
+  @override
+  State<Tugas9> createState() => _Tugas9State();
+}
 
-  const ListProduct({super.key, required this.product});
+class _Tugas9State extends State<Tugas9> {
+  final List<ObatModel> namaObat = [
+    ObatModel(name: "paracetamol", price: 7000, image: AppImages.Paracetamol),
+    ObatModel(name: "Baskom", price: 7000, image: AppImages.Balsem),
+    ObatModel(name: "fresh care", price: 10000, image: AppImages.Fresh_care),
+    ObatModel(name: "balsem", price: 15000000, image: AppImages.Balsem),
+    ObatModel(name: "promag", price: 8000, image: AppImages.Promag),
+    ObatModel(name: "koyo", price: 60000, image: AppImages.koyo),
+    ObatModel(name: "paracetamol", price: 100000, image: AppImages.Paracetamol),
+    ObatModel(name: "koyo", price: 25000, image: AppImages.koyo),
+    ObatModel(name: "betadine", price: 30000, image: AppImages.betadine),
+    ObatModel(name: "fresh care", price: 15000, image: AppImages.Fresh_care),
+    ObatModel(name: "paraceatmol", price: 20000, image: AppImages.Promag),
+  ];
 
   @override
   Widget build(BuildContext context) {
-    // Menggunakan Card untuk tampilan yang lebih menarik
-    return Card(
-      elevation: 2,
-      margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-      child: Padding(
-        padding: const EdgeInsets.all(10.0),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            // Kolom Kiri: Gambar (Placeholder)
-            Container(
-              width: 80,
-              height: 80,
-              decoration: BoxDecoration(
-                // KESALAHAN 2: Colors.grey[200] mungkin null, pastikan ini aman.
-                // Disarankan menggunakan null safety yang ketat.
-                color: Colors.grey.shade200,
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: const Icon(
-                Icons.shopping_bag,
-                size: 40,
-                color: Colors.blueGrey,
-              ),
-            ),
-            const SizedBox(width: 10),
-            // Kolom Tengah: Nama & Deskripsi
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Text(
-                    // KESALAHAN 3: Koma (,) hilang setelah product.name
-                    product.name,
-                    style: const TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 16,
-                    ),
-                  ),
-                  const SizedBox(height: 5),
-                  Text(
-                    product.description,
-                    style: TextStyle(color: Colors.grey[600], fontSize: 12),
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                ],
-              ),
-            ),
-            // Kolom Kanan: Harga
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                Text(
-                  // Menampilkan harga dengan format Rp dan 0 desimal
-                  'Rp ${product.price.toStringAsFixed(0)}',
-                  style: const TextStyle(
-                    color: Colors.deepOrange,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 14,
-                  ),
-                ),
-                const SizedBox(height: 5),
-                const Icon(Icons.add_shopping_cart, color: Colors.green),
-              ],
-            ),
-          ],
-        ),
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Color.fromARGB(255, 51, 70, 52),
+        title: Text('daftar obat', style: TextStyle(color: Colors.white)),
+      ),
+      backgroundColor: Color(0xffE6CFA9),
+      body: ListView.builder(
+        itemCount: namaObat.length,
+        itemBuilder: (BuildContext context, int index) {
+          final item = namaObat[index];
+          return ListTile(
+            onTap: () {},
+            tileColor: item.backgroundColor,
+            leading: Image.asset(item.image, width: 60),
+            title: Text(item.name),
+            subtitle: Text(item.price.toString().toRPCurrency()),
+          );
+        },
       ),
     );
   }

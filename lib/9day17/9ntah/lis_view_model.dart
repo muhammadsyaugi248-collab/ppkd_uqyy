@@ -1,49 +1,48 @@
 import 'package:flutter/material.dart';
 import 'package:ppkd_uqyy/9day17/appimage.dart';
-import 'package:ppkd_uqyy/9day17/models/oabat_models.dart';
-import 'package:ppkd_uqyy/extension/rupiah.dart';
+import 'package:ppkd_uqyy/9day17/models/obat_models.dart';
+import 'package:ppkd_uqyy/9day17/extension/rupiah.dart';
 
-class Tugas9 extends StatefulWidget {
-  const Tugas9({super.key});
+class Tugas9312 extends StatefulWidget {
+  const Tugas9312({super.key});
 
   @override
-  State<Tugas9> createState() => _Tugas9State();
+  State<Tugas9312> createState() => _Tugas9312State();
 }
 
-class _Tugas9State extends State<Tugas9> {
+class _Tugas9312State extends State<Tugas9312> {
   final List<ObatModel> namaObat = [
     ObatModel(
       name: "Paracetamol",
       price: 5000,
-      condition: "Segar",
+
       backgroundColor: Colors.amber.withOpacity(0.5),
       image: AppImages.Paracetamol,
     ),
     ObatModel(
       name: "Fresh Care",
       price: 5000,
-      condition: "Segar",
+
       backgroundColor: Colors.red.withOpacity(0.5),
       image: AppImages.Fresh_care,
     ),
     ObatModel(
       name: "Balsem",
       price: 15000,
-      condition: "Segar",
+
       backgroundColor: Colors.orange.withOpacity(0.5),
       image: AppImages.Balsem,
     ),
     ObatModel(
       name: "Promag",
       price: 35000,
-      condition: "Segar",
+
       backgroundColor: Colors.yellow.withOpacity(0.5),
       image: AppImages.Promag,
     ),
     ObatModel(
       name: "Koyo",
-      price: 2000,
-      condition: "Segar",
+      price: 25000,
       backgroundColor: Colors.yellowAccent.withOpacity(0.5),
       image: AppImages.koyo,
     ),
