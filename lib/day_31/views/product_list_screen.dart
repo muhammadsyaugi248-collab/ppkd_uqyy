@@ -118,7 +118,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
     } else {
       return AppBar(
         title: const Text(
-          'New Arrivals',
+          'MPRO fake shop',
           style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
         ),
         backgroundColor: Colors.white,
