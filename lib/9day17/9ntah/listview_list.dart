@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class tugas912 extends StatefulWidget {
+class tugas912extends StatefulWidget {
   const tugas912({super.key});
 
   @override
