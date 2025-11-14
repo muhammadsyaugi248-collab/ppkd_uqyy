@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ppkd_uqyy/day33/login%20screen/login.dart';
+import 'package:ppkd_uqyy/day33/models/login.dart';
 import 'package:ppkd_uqyy/day_31/views/product_list_screen.dart';
 import 'package:ppkd_uqyy/tugas13/preferences/preference_handler.dart';
 
@@ -23,13 +25,13 @@ class _SplashScreenState extends State<SplashScreen> {
       if (isLogin != null && isLogin == true) {
         Navigator.pushAndRemoveUntil(
           context,
-          MaterialPageRoute(builder: (context) => ProductListScreen()),
+          MaterialPageRoute(builder: (context) => LoginPage()),
           (route) => false,
         );
       } else {
         Navigator.pushAndRemoveUntil(
           context,
-          MaterialPageRoute(builder: (context) => ProductListScreen()),
+          MaterialPageRoute(builder: (context) => LoginPage()),
           (route) => false,
         );
       }
@@ -45,8 +47,8 @@ class _SplashScreenState extends State<SplashScreen> {
         children: [
           Center(child: Image.asset("assets/images/sp.png")),
           Text(
-            '''MPRO fake shop
-            By @syaugishahab15''',
+            '''MPRO fake shop\n
+            By @itss_qyy''',
             style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
         ],
