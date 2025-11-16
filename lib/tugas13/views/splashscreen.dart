@@ -18,7 +18,7 @@ class _SplashscreenState extends State<Splashscreen> {
     isLoginFunction();
   }
 
-  isLoginFunction() async {
+  Future<void> isLoginFunction() async {
     Future.delayed(Duration(seconds: 3)).then((value) async {
       var isLogin = await PreferenceHandler.getLogin();
       print(isLogin);

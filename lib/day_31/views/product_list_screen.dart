@@ -133,7 +133,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
             },
           ),
           IconButton(
-            icon: const Icon(Icons.shopping_bag_outlined, color: Colors.black),
+            icon: const Icon(Icons.shopping_cart_checkout_outlined, color: Colors.black),
             onPressed: () {},
           ),
         ],

@@ -111,7 +111,7 @@ class _Tugas5State extends State<Tugas5> {
                     child: Text(showImage ? "Sembunyikan" : "Tampilkan"),
                   ),
                 ] else ...[
-                  Container(
+                  SizedBox(
                     height: 400,
                     width: double.infinity,
                     child: Center(

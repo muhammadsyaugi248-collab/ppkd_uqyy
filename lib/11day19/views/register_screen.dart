@@ -260,5 +260,5 @@ class _RegisterScreenDay19State extends State<RegisterScreenDay19> {
     );
   }
 
-  LoginButton({required String text, required Null Function() onPressed}) {}
+  void LoginButton({required String text, required Null Function() onPressed}) {}
 }

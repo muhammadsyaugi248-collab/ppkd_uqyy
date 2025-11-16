@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:ppkd_uqyy/10day18/loginscreen.dart';
-import 'package:ppkd_uqyy/day33/models/login.dart';
-import 'package:ppkd_uqyy/day_31/views/product_list_screen.dart';
+import 'package:ppkd_uqyy/day33/view/login.dart';
 import 'package:ppkd_uqyy/tugas13/preferences/preference_handler.dart';
 
-class SplashScreenWidget extends StatefulWidget {
-  const SplashScreenWidget({super.key});
+class splashscreen2 extends StatefulWidget {
+  const splashscreen2({super.key});
 
   @override
-  State<SplashScreenWidget> createState() => _SplashScreenWidgetState();
+  State<splashscreen2> createState() => _splashscreen2State();
 }
 
-class _SplashScreenWidgetState extends State<SplashScreenWidget> {
+class _splashscreen2State extends State<splashscreen2> {
   @override
   void initState() {
     super.initState();
@@ -25,13 +23,13 @@ class _SplashScreenWidgetState extends State<SplashScreenWidget> {
       if (isLogin != null && isLogin == true) {
         Navigator.pushAndRemoveUntil(
           context,
-          MaterialPageRoute(builder: (context) => LoginScreenDay18()),
+          MaterialPageRoute(builder: (context) => LoginPage()),
           (route) => false,
         );
       } else {
         Navigator.pushAndRemoveUntil(
           context,
-          MaterialPageRoute(builder: (context) => LoginScreenDay18()),
+          MaterialPageRoute(builder: (context) => LoginPage()),
           (route) => false,
         );
       }
@@ -47,8 +45,7 @@ class _SplashScreenWidgetState extends State<SplashScreenWidget> {
         children: [
           Center(child: Image.asset("assets/images/sp.png")),
           Text(
-            '''MPRO fake shop\n
-            By @itss_qyy''',
+            "MPRO fake shop\nBy @itss_qyy",
             style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
         ],

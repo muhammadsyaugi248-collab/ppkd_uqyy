@@ -250,7 +250,7 @@ class _FormInputInteractiveState extends State<FormInputInteractive> {
                 widget.onToggleTheme(value);
               },
               activeTrackColor: Colors.blue.shade200,
-              activeColor: Colors.blueAccent,
+              activeThumbColor: Colors.blueAccent,
             ),
           ],
         ),
@@ -288,7 +288,7 @@ class _FormInputInteractiveState extends State<FormInputInteractive> {
             ),
           ),
           hint: const Text("Pilih Kategori"),
-          value: _selectedCategory,
+          initialValue: _selectedCategory,
           items: _categories.map((String category) {
             return DropdownMenuItem<String>(
               value: category,

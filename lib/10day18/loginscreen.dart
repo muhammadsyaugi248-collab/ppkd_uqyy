@@ -23,7 +23,7 @@ class _LoginScreenDay18State extends State<LoginScreenDay18> {
     return Scaffold(body: Stack(children: [buildBackground(), buildLayer()]));
   }
 
-  login() async {
+  Future<void> login() async {
     Navigator.push(context, MaterialPageRoute(builder: (context) => Tugas6()));
   }
 

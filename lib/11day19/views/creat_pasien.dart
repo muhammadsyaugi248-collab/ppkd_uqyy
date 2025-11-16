@@ -15,7 +15,7 @@ class _CRWidgetDay19State extends State<CRWidgetDay19> {
   //final ageC = TextEditingController();
   final emailC = TextEditingController();
   final classC = TextEditingController();
-  getData() {
+  void getData() {
     DbHelper.getAllStudent();
     setState(() {});
   }
@@ -128,10 +128,10 @@ class _CRWidgetDay19State extends State<CRWidgetDay19> {
     );
   }
 
-  CustomLoginButton({
+  void CustomLoginButton({
     required String text,
     required Null Function() onPressed,
   }) {}
 
-  LoginButton({required String text, required Null Function() onPressed}) {}
+  void LoginButton({required String text, required Null Function() onPressed}) {}
 }
