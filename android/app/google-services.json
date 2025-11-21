@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1011879007782",
+    "project_id": "ppkd-qyy-project-8f287",
+    "storage_bucket": "ppkd-qyy-project-8f287.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011879007782:android:6ab607c09cb7bb209738e7",
+        "android_client_info": {
+          "package_name": "com.example.ppkd_uqyy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeI61DiG2eHYkpfZmKEh3PH-Sk11vYevw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

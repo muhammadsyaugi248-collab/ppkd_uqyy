@@ -29,24 +29,29 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   animated_notch_bottom_bar: ^1.0.0
+  cloud_firestore: ^6.1.0
   collection_providers: ^0.2.2
-  curved_labeled_navigation_bar: ^2.0.6
   cupertino_icons: ^1.0.8
+  curved_labeled_navigation_bar: ^2.0.6
   delightful_toast: ^1.1.0
+  firebase_core: ^4.2.1
   flutter:
     sdk: flutter
   flutter_fit_utils_provider: ^2.4.1
   flutter_native_splash: ^2.4.7
   flutter_toast_bar: ^0.0.2
   fluttertoast: ^9.0.0
-  shimmer: ^3.0.0
-  http: ^1.6.0
+  geocoding: ^4.0.0
+  geolocator: ^14.0.2
   google_fonts: ^6.2.1
+  google_maps: ^8.2.0
+  http: ^1.6.0
   intl: ^0.20.2
   photo_manager_image_provider: ^2.2.0
   provider: ^6.1.5+1
   shared_preference_app_group: ^1.1.1
   shared_preferences: ^2.5.3
+  shimmer: ^3.0.0
   sqflite: ^2.4.2
   typed_preferences: ^0.2.0
 

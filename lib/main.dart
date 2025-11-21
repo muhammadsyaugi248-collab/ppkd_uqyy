@@ -1,11 +1,13 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:ppkd_uqyy/day33/dasboard/bottom_nav.dart';
-import 'package:ppkd_uqyy/day33/view/login.dart';
+import 'package:intl/date_symbol_data_local.dart';
 import 'package:ppkd_uqyy/day33/view/splash_screen.dart';
+import 'package:ppkd_uqyy/firebase_options.dart';
 
-
-
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await initializeDateFormatting('id_ID', null);
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
 }
 
