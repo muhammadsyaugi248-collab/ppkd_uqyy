@@ -1,7 +1,9 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
+import 'package:ppkd_uqyy/day33/register/register.dart';
 import 'package:ppkd_uqyy/day33/view/splash_screen.dart';
+import 'package:ppkd_uqyy/day39/views/register/register.dart';
 import 'package:ppkd_uqyy/firebase_options.dart';
 
 void main() async {
@@ -40,7 +42,7 @@ class MyApp extends StatelessWidget {
           seedColor: const Color.fromARGB(255, 255, 0, 0),
         ),
       ),
-      home: splashscreen2(),
+      home: RegistrationScreen(),
     );
   }
 }

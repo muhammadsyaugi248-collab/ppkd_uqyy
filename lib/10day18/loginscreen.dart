@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:ppkd_uqyy/11day19/database/db_helper.dart';
-
-import 'package:ppkd_uqyy/11day19/views/register_screen.dart';
+import 'package:ppkd_uqyy/day33/register/register.dart';
 import 'package:ppkd_uqyy/tugas4/tugas4.dart';
 import 'package:ppkd_uqyy/tugas6/bebas6.dart';
 
@@ -230,7 +229,7 @@ class _LoginScreenDay18State extends State<LoginScreenDay18> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => RegisterScreenDay19(),
+                            builder: (context) => RegisterPage(),
                           ),
                         );
                         // context.push(RegisterScreen());
